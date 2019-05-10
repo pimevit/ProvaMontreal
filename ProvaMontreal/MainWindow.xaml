@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProvaMontreal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProvaMontreal"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+      <Button x:Name="previousMovieButton" Padding="15" Margin="15" Click="previousMovieButton_Click">Anterior</Button>
+      <Button x:Name="movieInformationButton" Padding="15" Margin="15" Click="movieInformationButton_Click">Detalhes do Filme</Button>
+      <Button x:Name="nextMovieButton" Padding="15" Margin="15" Click="nextMovieButton_Click">Próximo</Button>
+    </StackPanel>
+    <TextBlock x:Name="titleText" Margin="20" />
+    <TextBlock x:Name="homePageText" Margin="20" />
+    <TextBlock x:Name="idText" Margin="20" />
+
+  </Grid>
+</Window>
+
